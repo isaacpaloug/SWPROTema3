@@ -24,4 +24,13 @@ public class UtilitatsConsola {
 		return cadena;
 	}
 	
+	public static void mostraCadena(int[] valors) {
+		System.out.print("[");
+		String separador = "";
+		for (int i = 0; i < valors.length; i++) {
+			System.out.print(separador + valors[i]);
+			separador = ", ";
+		}
+		System.out.println("]");
+	}
 }
